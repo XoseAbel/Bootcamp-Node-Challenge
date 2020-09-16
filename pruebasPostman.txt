@@ -1,0 +1,50 @@
+GET 
+/login 
+{
+"email":"test@tes.com",
+"password":"123f456"
+}
+
+
+post (autocompletado campos)
+{
+ "name" :2,
+ "surname" :2,
+ "email" :2,
+ "password" : 12,
+ "phone":{
+     "countryCode": 123,
+     "number":12345678
+ }
+}
+{
+ "name" :"55",
+ "surname" :"24",
+ "email" :"tes.t@tesco.m",
+ "password" :"9999p99",
+ "phone":{
+     "countryCode": 34,
+     "number":3452345235
+ },
+ "condition": "healthy"
+}
+
+patch - errores
+{
+"op":"setPho2ne",
+"value":{"phone": {
+"countryCode": "hola",
+"number": "quetal"
+}}
+patch
+{
+"op":"setPhone",
+"value":{"phone": {
+"countryCode": 333,
+"number": 3333335678
+}}
+}
+{
+"op":"setCondition",
+"value":"healthy"
+}

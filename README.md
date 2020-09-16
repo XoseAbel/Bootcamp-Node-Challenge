@@ -1,0 +1,9 @@
+- Estrutura POST
+  - name (string entre 2 y 40 caracteres)
+  - surname (string entre 2 y 40 caracteres)
+  - email (string entre 2 y 40 caracteres, cumplir con la forma de una email [string]@[string].[string])
+  - password (string entre 6 y 14 caracteres, contener como mínimo una letra y 1 dígito)
+  - phone (object) { countryCode (entre 1 y 3 dígitos) , number (entre 8 y 12 dígitos) }
+  - condition (string , únicamente alguna de las siguientes opciones: [“healthy”, “infected” y “unknown”], “unknown” por defecto)
+  - lastUpdate (date)
+  - lastLogIn (date)
